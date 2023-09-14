@@ -1,12 +1,12 @@
-【rust语言编写的】wireguard 转换为 nekoray 节点，只需要一个 wg-config.conf 配置文件，再输入一个IP和Port端口，即可生成 nekoray 节点的链接。本程序使用 loop 死循环，可以继续生成nekoray节点的链接，想要退出程序，把黑色窗口关闭即可。
+【Rust语言编写的】wireguard 转换为 nekoray 节点，只需要一个 wg-config.conf 配置文件，再输入一个IP和Port端口，即可生成 nekoray 节点的链接。本程序使用 loop 死循环，可以继续生成nekoray节点的链接，想要退出程序，把黑色窗口关闭即可。
 
 ### 1、软件效果截图
 
-- 软件使用简单，直接上图吧。
+- 软件使用简单，直接上图
 
 <img src="images\Snipaste_2023-09-14_17-28-52.png" />
 
-- 下图中，左边为本软件的使用效果截图，右边为导入节点后 NekoBox 软件截图
+- 下图中，左边为本软件的使用效果截图，右边为导入节点后 NekoBox 的软件截图
 
 <img src="images\Snipaste_2023-09-14_17-33-28.png" />
 
