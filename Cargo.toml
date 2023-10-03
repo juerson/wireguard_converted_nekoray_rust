@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 regex = "1.9.5"
 base64 = "0.13"
+lazy_static = "1.4.0"
 
 [target.x86_64-pc-windows-msvc]
 rustflags = ["-C", "target-feature=+crt-static"]
