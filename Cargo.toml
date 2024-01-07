@@ -9,6 +9,17 @@ edition = "2021"
 regex = "1.9.5"
 base64 = "0.13"
 lazy_static = "1.4.0"
+validator = "0.16.1"
 
-[target.x86_64-pc-windows-msvc]
-rustflags = ["-C", "target-feature=+crt-static"]
+#[target.x86_64-pc-windows-msvc]
+#rustflags = ["-C", "target-feature=+crt-static"]
+
+[[bin]]
+name = "app1"
+path = "src/app1.rs"
+target = "x86_64-pc-windows-msvc"
+
+[[bin]]
+name = "app2"
+path = "src/main.rs"
+target = "x86_64-pc-windows-msvc"
