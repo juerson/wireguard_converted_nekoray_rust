@@ -8,6 +8,8 @@ WireGuard 转换 nekoray 节点链接，只需要一个 wg-config.conf 配置文
 
 <img src="images\screenshot2.png" />
 
+<img src="images\screenshot3.png" />
+
 ### 2、使用到的工具
 
 NekoBox Windows版：https://github.com/MatsuriDayo/nekoray/releases

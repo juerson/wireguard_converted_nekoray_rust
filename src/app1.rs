@@ -1,11 +1,12 @@
-#[allow(deprecated)]
-extern crate base64;
+use base64;
 use lazy_static::lazy_static;
 use regex::Regex;
 use std::fs;
 use std::io::{self, Write};
 use std::net::Ipv4Addr;
 use std::net::Ipv6Addr;
+use clipboard::ClipboardContext;
+use clipboard::ClipboardProvider;
 
 // 使用 lazy_static 宏创建静态正则表达式对象，使用 lazy_static 宏可以在第一次使用正则表达式时初始化它们，以后就不需要再次编译。
 lazy_static! {
@@ -225,8 +226,11 @@ fn main() {
 
         println!("\n{:-<52}NekoRay节点如下:{:-<52}", "", "");
         println!("{}", nekoray_node);
+        // 复制到剪贴板
+        let mut clipboard: ClipboardContext = ClipboardProvider::new().unwrap();
+        clipboard.set_contents(nekoray_node.to_owned()).unwrap();
         println!("{:-<120}", "");
-        println!("\n节点已经生成好，将上面的NekoRay链接复制到NekoBox软件使用即可！记得要切换为sing-box核心。\n");
+        println!("\n生成的NekoRay链接已复制到剪切板，可以黏贴到NekoBox软件中使用！记得要切换为sing-box核心。\n");
         println!("{:+<120}", "");
     }
 }
